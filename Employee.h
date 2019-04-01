@@ -12,9 +12,9 @@ class Employee
 	//Add Data Members here
 	
 public:
-	Employee(char* name, const Address&);
+	Employee(char* name, const Address& other);
 	//overloaded constructor
-	Employee(const Employee&);
+	Employee(const Employee& other);
 	//copy constructor
 	friend ostream& operator<<(ostream& osObject, const Employee&);
 	//overloaded insertion operator

@@ -13,11 +13,12 @@ class Address
 	char* county;
 
 public:
+	//Address();
 	Address(char* house_Number, char* Street_Name, char * City,char* County);
 	// an overloaded constructor
-	Address(const Address&);
+	Address(const Address& other);
 	//copy constructor
-	friend ostream& operator<<(ostream& osObject, const Address&);
+	friend ostream& operator<<(ostream& osObject, const Address& other);
 	//overloaded insertion operator
 	const Address &   operator=(const Address& other);
 	//overloaded assignment operator
